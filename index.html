@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athu AI Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="history-taskbar" id="historyTaskbar">
+            <h3 class="history-title" id="historyTitle">History</h3>
+            <ul class="history-list" id="historyList">
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="theme-toggle" onclick="toggleDarkMode()">
+                <span class="wire" id="wire"></span><span class="bulb-icon" id="bulbIcon">☀</span>
+            </div>
+            <h2 id="chatTitle">Ask Athu AI</h2>
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button onclick="askGemini()" id="askButton">Ask</button>
+            <div id="response" class="response-box"></div>
+        </div>
+    </div>
+    <div class="footer" id="footerText">Designed by Atharva Zope</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
